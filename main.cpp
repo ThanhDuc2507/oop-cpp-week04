@@ -1,41 +1,41 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
+void printNames() {
+    cout << "Huỳnh Nguyen Thanh Duc" << endl;
+}
+
+void solveLinearEquation(double a, double b) {
+    if (a == 0) {
+        if (b == 0) {
+            cout << "Equation has infinitely many solutions (Vo so nghiem)." << endl;
+        } else {
+            cout << "Equation has no solution (Vo nghiem)." << endl;
+        }
+    } else {
+        double x = -b / a;
+        cout << "Equation has one root x = " << x << endl;
+    }
+}
+
 int main() {
-    const int N = 5;
-    string names[N];
-    string ids[N];
-    string phones[N];
-cout << "==== STUDENT LIST ====\n\n" << endl;
-    for (int i = 0; i < N; i++) {
-        cout << "Enter name for student " << (i + 1) << ": ";
-        getline(cin, names[i]);
-        
-        cout << "Enter ID for student " << (i + 1) << ": ";
-        getline(cin, ids[i]);
-        
-        cout << "Enter phone number for student " << (i + 1) << ": ";
-        getline(cin, phones[i]);
-        
-        cout << "-------------------------------\n" << endl;
-    }
-    for (int i = 0; i < N; i++) {
-        cout << "Student: " << (i + 1) << ": ";
-        
-        cout << "Name: " << (i + 1) << ": ";
-       
-        cout << "ID: " << (i + 1) << ": ";
-        
-        cout << "Phone: " << (i + 1) << ": ";
-        cout << "-------------------------------\n" << endl;
-        cout << "total students: " << N << endl;
-    }
+    // Test Exercise 1
+    cout << "--- Exercise 1 ---" << endl;
+    printNames();
+    cout << endl;
+
+    // Test Exercise 2
+    cout << "--- Exercise 2 ---" << endl;
+    double a, b;
+    cout << "Enter a: ";
+    cin >> a;
+    cout << "Enter b: ";
+    cin >> b;
+
+    solveLinearEquation(a, b);
+
     return 0;
 }
-        
-            
-    
     
     
 
