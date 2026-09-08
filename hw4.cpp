@@ -11,7 +11,7 @@ int main()
     int original = n;
     int reverse = 0;
 
-    // Dao nguoc n
+    
     while (n > 0)
     {
         int digit = n % 10;
@@ -21,7 +21,7 @@ int main()
         n = n / 10;
     }
 
-    // So sanh
+   
     if (original == reverse)
     {
         cout << original << " la so doi xung";
