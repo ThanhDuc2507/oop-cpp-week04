@@ -1,15 +1,18 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-void showMenu() {
-    cout << "===== MENU =====" << endl;
-    cout << "1. Display students" << endl;
-    cout << "2. Show statistics" << endl;
-    cout << "3. Exit" << endl;
-    cout << "=================" << endl;
+void showStudentName(string name) {
+    cout << "Hello, " << name << "!" << endl;
+    cout << "Welcome to our class!" << endl;
 }
 
 int main() {
-    showMenu();
+    string studentName;
+    cout << "Enter your name: ";
+    getline(cin, studentName);
+
+    showStudentName(studentName);
+
     return 0;
 }
