@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 
-void showWelcome() {
-    cout << "=================================" << endl;
-    cout << "  Welcome to Student Manager!" << endl;
-    cout << "=================================" << endl;
+void showMenu() {
+    cout << "===== MENU =====" << endl;
+    cout << "1. Display students" << endl;
+    cout << "2. Show statistics" << endl;
+    cout << "3. Exit" << endl;
+    cout << "==================" << endl;
 }
 
 int main() {
-    showWelcome();
-
-    cout << "Let's get started!" << endl;
+    showMenu();
     return 0;
 }
